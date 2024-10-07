@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animating Sprites</title>
+
+    <!-- Normalize Stylesheet -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JetBrains Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="hamburger-menu">
+        <img src="images/hamburger.PNG" alt="hamburger" width="100" height="100">
+    
+            <ul>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="getting-started.html"><li>Getting Started</li></a>
+                <a href="languages.html"><li>Languages</li></a>
+                <a href="char-sprites.html"><li>Character Sprites</li></a>
+                <a href="animation.html"><li>Character Animation</li></a>
+                <a href="tilemaps.html"><li>Building Tilemaps</li></a>
+                <a href="collision-shapes.html"><li>Collision Shapes</li></a>
+            </ul>
+    </nav>
+
+    <header class="internal-head">
+        <div class="number">
+            <h1>4</h1>
+        </div>
+
+        <div class="header-internal">
+            <h2>ANIMATING SPRITES</h2>
+        </div>
+    </header>
+
+    <article class="article-internal">
+        <p>To begin adding animation to our character sprites, we have to create two child nodes underneath the character body node we created previously. The two new child nodes should be called AnimationTree and AnimationPlayer.</p>
+
+        <p>AnimationPlayer allows us to create keyframes in order to determine what the character sprite is doing. This can be done by creating a new property track and assigning it to the Sprite2D node we created previously. We can select the frames of the Sprite2D nodes that we want associated with each action, and determine the time how frequently it switches between each of the keyframes. In my case, I had the keyframes switch every 0.2 sections, and having each action loop after 0.4 sections.</p>
+
+        <figure>
+            <img src="images/animation/key-frames.png" alt="art-4-img-1">
+        </figure>
+
+        <p>Once we are satisfied with how we want to animation to appear, we would move onto the AnimationTree node. The AnimationTree node tells Godot how we want each action to blend into one another by creating a tree of each action's relationship with one another.</p>
+
+        <p>Because I want the idle animation to play when the user is not moving, and the walk cycle to play when the user is moving, I created a tree that starts with the root node, then pointing to the idel node, which points at the walk node. This walk node then points back to the idle node, creating a cycle.</p>
+
+        <figure>
+            <img src="images/animation/animation-tree.png" alt="art-4-img-2">
+        </figure>
+
+        <p>You will see that next to both the walk and idle nodes, there is a little pencil icon, which is what you can click on to edit the node. Within the node, we can assign an action to user movement based on an x and y coordinate system.</p>
+
+        <figure>
+            <img src="images/animation/triangle.png" alt="art-4-img-3">
+        </figure>
+
+        <p>When all of these steps are completed, you should be able to run the program and see the character sprite move accordingly your keypresses.</p>
+
+    </article>
+    
+    <nav class="buttons">
+        <div class="prev-button">
+            <a href="char-sprites.html">BACK</a>
+        </div>
+
+        <div class="next-button">
+            <a href="tilemaps.html">NEXT</a>
+        </div>
+    </nav>
+
+    <footer>
+        <p>Designed by Holly Zheng</p>
+    </footer>
+</body>
+</html>

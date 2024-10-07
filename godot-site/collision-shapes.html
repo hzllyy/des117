@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collision Shapes</title>
+    <!-- Normalize Stylesheet -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+            
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JetBrains Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <nav class="hamburger-menu">
+        <img src="images/hamburger.PNG" alt="hamburger" width="100" height="100">
+
+            <ul>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="getting-started.html"><li>Getting Started</li></a>
+                <a href="languages.html"><li>Languages</li></a>
+                <a href="languages.html"><li>Languages</li></a>
+                <a href="char-sprites.html"><li>Character Sprites</li></a>
+                <a href="animation.html"><li>Character Animation</li></a>
+                <a href="tilemaps.html"><li>Building Tilemaps</li></a>
+                <a href="collision-shapes.html"><li>Collision Shapes</li></a>
+            </ul>
+    </nav>
+
+    <header class="internal-head">
+        <div class="number">
+            <h1>6</h1>
+        </div>
+
+        <div class="header-internal">
+            <h2>COLLISION SHAPES</h2>
+        </div>
+    </header>
+
+    <article class="article-internal">
+        <p>Finally, we want to work on collision shapes. In order for a character to interact with the objects around them, we need to make sure that our avatar isn't just walking all over everything. So, I will be demonstrating how to create a collision shape-- in this case, it will be in the form of a "higher ground" that the character sprite cannot walk onto unless it's through a certain path.</p>
+
+        <p>I'll start by going into the tile set category and selecting the "paint" option. This will bring you to a window that displays the selected tile, as well as a couple of key toggles that allow you to manipulate a highlighted blue area.</p>
+
+        <figure>
+            <img src="images/collision-shapes/paint.png" alt="art-6-img-1">
+        </figure>
+
+        <p>The blue highlighted area indicates the part of the tile you would like to make into a collision shape. In the case of this tile, I wanted it so that the character sprite wouldn't be able to move onto the tile if approaching it from the left side. Therefore, I adjusted the highlighted area to block off the tile from the left.</p>
+
+        <figure>
+            <img src="images/collision-shapes/border.png" alt="art-6-img-2">
+        </figure>
+
+        <p>Now, when you run the game, you will see that the character is unable to move onto the elevated surface. However, it can go up on the surface when there is a means of entry, like the set of stairs I provided.</p>
+
+        <figure>
+            <img src="images/collision-shapes/border-ex.png" alt="art-6-img-3">
+        </figure>
+
+        <figure>
+            <img src="images/collision-shapes/stairs.png" alt="art-2-img-4">
+        </figure>
+
+        <p>With everything we've gone over, you should now be able to build a very simple and beginner-friendly scene of your own in Godot!</p>
+
+    </article>
+
+    <div class="prev-button">
+        <a href="tilemaps.html">BACK</a>
+    </div>
+
+    <footer>
+        <p>Designed by Holly Zheng</p>
+    </footer>
+</body>
+</html>

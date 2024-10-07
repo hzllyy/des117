@@ -1,0 +1,419 @@
+/* JetBrain Mono Font */
+
+@font-face {
+    font-family: "JetBrains Mono", monospace;
+    src: url(type/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* HOMEPAGE NAV BAR */
+  .home-button {
+    background-color: #989898;
+    padding: 33px 0px 32px 20px;
+    border-bottom: 7px solid white;
+
+    position: absolute;
+    left: -9999px;
+  }
+
+  .hamburger-menu {
+    background-color: #989898;
+    border-bottom: 7px solid white;
+  }
+
+  .hamburger-menu ul{
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: -9999px;
+  }
+
+  .hamburger-menu ul li {
+    border-bottom: 2px solid #4F4F4F;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .hamburger-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hamburger-menu ul a{
+    color: #4F4F4F;
+    font-family: "JetBrains Mono", mono;
+    text-decoration: none;
+  }
+
+  #circle {
+    position: absolute;
+    left: 40px;
+    bottom: 220px;
+  }
+
+  .hamburger-menu:hover ul{
+    position: static;
+    left: 0;
+    z-index: 100;
+  }
+
+  .hamburger-menu:hover #circle {
+    position: absolute;
+    bottom: -75px;
+  }
+
+  .hamburger-menu li:hover {
+    border: 2px solid #4F4F4F;
+    background: #4F4F4F;
+    color: white;
+  }
+
+  body {
+    background-color: #4F4F4F;
+  }
+
+  /* HOMEPAGE HEADER */
+
+  #home-head {
+    background-color: #989898;
+
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    text-align: center;
+
+    width: 320px;
+    height: 650px;
+    margin: 30px auto 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 7px solid white;
+  }
+
+  /* Game Development With */
+
+  #home-head h2{
+    font-size: 20px;
+    width: 200px;
+  } 
+
+  /* GODOT */
+
+  #home-head h1 {
+    font-size: 80px;
+    width: 50px;
+    height: 370px;
+
+    word-wrap: break-word;
+    line-height: 74px;
+
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    background-color: #989898;
+    z-index: 1;
+  }
+
+  /* a beginner's guide */
+
+  #home-head h3 {
+    font-size: 20px;
+    margin: 20px auto 20px auto;
+  }
+
+  /* HOMEPAGE CONTENT */
+
+  #nav-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 5px 0 20px 0;
+  }
+
+  #nav-head h1 {
+    color: white;
+    font-family: "JetBrains Mono", mono;
+  }
+
+  .white-div {
+    color: white;
+    background-color: white;
+    font-size: 3px;
+    width: 70px;
+    height: 3px;
+  }
+
+  #navigate {
+    display: flex;
+    gap: 100px;
+    width: 320px;
+    overflow-x: scroll;
+  }
+
+  #navigate a {
+    font-family: "JetBrains Mono", mono;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  #navigate div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    flex: none;
+  }
+
+  #navigate::-webkit-scrollbar {
+    display:none;
+  }
+
+  .gallery-wrap {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+  }
+
+  #backBtn, #nextBtn {
+    cursor: pointer;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .white-div-2 {
+    color: white;
+    background-color: white;
+    font-size: 3px;
+    height: 3px;
+    width: 320px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: #989898;
+    padding: 50px;
+
+    font-family: "JetBrains Mono", mono;
+    color: white;
+    text-align: center;
+
+    border-top: 7px solid white;
+  }
+
+  /* HEADER INTERNAL */
+
+  .internal-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .internal-head div {
+    color: white;
+    font-family: "JetBrains Mono", mono;
+    padding: 0 10px 0 5px;
+  }
+
+  .number{
+    font-size: 60px;
+    margin: 0 0 0 40px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .header-internal {
+    font-size: 25px;
+  }
+
+  .article-internal {
+    color: white;
+    font-family: "JetBrains Mono", mono;
+    padding: 0 40px 40px 40px;
+  }
+
+  .article-internal p {
+    line-height: 25px;
+    padding: 0 0 30px 0;
+  }
+
+  .article-internal img {
+    height: auto;
+    width: 140%;
+    padding-bottom: 30px;
+    margin-left: -50px;
+  }
+
+  .article-internal a {
+    color: white;
+  }
+
+  .next-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .next-button a{
+    color: white;
+    text-decoration: none;
+    font-family: "JetBrains Mono", mono;
+
+    font-size: 25px;
+    padding: 5px;
+    border: 3px solid white;
+  }
+
+  .next-button:hover a{
+    background-color: white;
+    color:#989898
+  }
+
+  .prev-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .prev-button a {
+    color: white;
+    text-decoration: none;
+    font-family: "JetBrains Mono", mono;
+
+    font-size: 25px;
+    padding: 5px;
+    border: 3px solid white;
+  }
+
+  .prev-button:hover a{
+    background-color: white;
+    color:#989898
+  }
+
+  @media only screen and (min-width:600px) {
+    #home-head{
+      width: 1025px;
+      height: 700px;
+      align-items:start;
+    }
+
+    #home-head h2 {
+      width: 600px;
+      height: auto;
+      font-size: 40px;
+      background-color:#989898;
+      z-index: 100;
+      margin: 110px auto 0 auto;
+      padding: 10px;
+    }
+
+    #home-head h1 {
+      padding-top: 30px;
+      width: 330px;
+      height: auto;
+      font-size: 110px;
+    }
+
+    #home-head h3 {
+      padding-top: 150px;
+      font-size: 30px;
+    }
+
+    #circle {
+      left: 460px;
+      top: 180px;
+    }
+
+    #circle img {
+      height: auto;
+      width: 510px;
+    }
+
+    .hamburger-menu:hover #circle {
+      position: absolute;
+      top: 460px;
+    }
+
+    /* NAVIVGATION HOMEPAGE */
+    #nav-head {
+      padding-top: 100px;
+    }
+
+    #nav-head h1 {
+      font-size: 50px;
+    }
+
+    #nav-head .white-div {
+      width: 350px;
+    }
+
+    .white-div-2 {
+      width: 950px;
+    }
+
+    .gallery-wrap {
+      margin: 0;
+      padding:40px 0 20px 0;
+    }
+
+    #navigate {
+      gap: 100px;
+      width: 1040px;
+    }
+
+    /* INTERNAL PAGE */
+    .number {
+      font-size: 200px;
+    }
+
+    .header-internal {
+      font-size: 100px;
+    }
+
+    .internal-head {
+      padding-left: 120px;
+    }
+
+    .internal-head div {
+      padding-left:20px;
+    }
+
+    .header-internal h2 {
+      margin: 0;
+    }
+
+    .article-internal {
+      padding: 10px 200px 10px 200px;
+    }
+
+    .article-internal a {
+      color: white;
+    }
+
+    .article-internal img {
+      height: auto;
+      width: 100%;
+      padding-bottom: 30px;
+      margin: auto;
+    }
+
+    .buttons {
+      padding: 30px 200px 30px 200px;
+    }
+  }

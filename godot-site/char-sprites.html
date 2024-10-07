@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Sprites</title>
+
+    <!-- Normalize Stylesheet -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JetBrains Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="hamburger-menu">
+        <img src="images/hamburger.PNG" alt="hamburger" width="100" height="100">
+    
+            <ul>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="getting-started.html"><li>Getting Started</li></a>
+                <a href="languages.html"><li>Languages</li></a>
+                <a href="char-sprites.html"><li>Character Sprites</li></a>
+                <a href="animation.html"><li>Character Animation</li></a>
+                <a href="tilemaps.html"><li>Building Tilemaps</li></a>
+                <a href="collision-shapes.html"><li>Collision Shapes</li></a>
+            </ul>
+    </nav>
+
+    <header class="internal-head">
+        <div class="number">
+            <h1>3</h1>
+        </div>
+
+        <div class="header-internal">
+            <h2>CHARACTER SPRITES</h2>
+        </div>
+    </header>
+
+    <article class="article-internal">
+        <p>To have a playable game, we need an avatar for the user to manipulate. And so, the first task on the list is to create a character sprite.</p>
+
+        <p>In Godot, every element that interacts with one another is called a node. To create our character sprite, we first have to create a Node2D, and load in the character sheet that can be downloaded through the asset pack. The character sheet has multiple views of a character avatar, which we will later be able to manipulate in order to create character animations.</p>
+
+        <figure>
+            <img src="images/character-sprite/spritesheet.png" alt="art-3-img-1">
+        </figure>
+
+        <p>When we drag the sprite sheet into the new node that we created, you will notice that it displays 16 different character sprites, facing different directions and in different poses. In order to have the sprite sheet display only one character, go to the Animations tab on the right and find the categories for Hframe and Vframe. Hframe and Vframe stands for horizontal frame and vertical frame respectively. Because there are four rows and four columns of the character sprite, we input the number 4 into both categories. After doing this, it should only display the first frame.</p>
+
+        <p>We should also create a new node for any other characters that might be present for this game. The asset pack also includes a character sheet for a cow, and that may be a fun NPC to display, so we would make a new node for the cow character as well.</p>
+
+        <figure>
+            <img src="images/character-sprite/cow-sprite.png" alt="art-3-img-2">
+        </figure>
+
+    </article>
+
+    <nav class="buttons">
+        <div class="prev-button">
+            <a href="languages.html">BACK</a>
+        </div>
+
+        <div class="next-button">
+            <a href="animation.html">NEXT</a>
+        </div>
+    </nav>
+
+    <footer>
+        <p>Designed by Holly Zheng</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Signika", sans-serif;
+    src: url('type/Signika-Regular.ttf') format('tff');
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+      "GRAD" 0;
+  }
+
+body {
+    background: url(images/strawberries.png);
+    padding-top: 250px;
+    font-family: Signika;
+    text-align: center;
+}
+
+article {
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(255,255,255,0.75);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #e3293c;
+}
+
+p {
+    color: #403a3b;
+}
